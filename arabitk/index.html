@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>arabitak</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+   integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" 
+  crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+   
+    
+    <div id="login-page" class="container">
+        <div class="login-container">
+            <h2 class="text-center mb-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;"> Login</h2>
+            <form id="login-form">
+                <div class="mb-3">
+                    <label for="username" class="form-label">User Name</label>
+                    <input type="text" class="form-control" id="username" required>
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label"> password</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+                <button type="submit" class="btn btn-dark w-100"> Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="app" style="display: none;">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container" style="background-color: rgb(0, 0, 0);">
+                <a class="navbar-brand" style="color:  rgb(255, 255, 255);font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;  font-size: 40px;" href="#"><i class="fa-solid fa-car-side"></i> Arabitak</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon" style="background-color:rgb(255, 255, 255) ; border-radius: 5px;"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="home-link" style="color: rgb(255, 255, 255) ;">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="products-link" style="color:  rgb(9, 9, 9);">Products</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="about-link"style="color:  rgb(255, 255, 255);">About </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" id="add-product-link"style="color: rgb(255, 255, 255);">Add Product</a>
+                        </li>
+                    </ul>
+                    <a class="nav-link" href="#" id="logout-link" style="background-color: rgb(128, 128, 128); padding: 5px; border-radius: 5px;">Log Out</a>
+                </div>
+            </div>
+        </nav>
+
+        <div id="home-page" class="container mt-4">
+            <h1 class="text-center mb-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Welcome to Arabitak</h1>
+            
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-638.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-625.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-639.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-637.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-632.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-636.jpg?v=15-03-2025" class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-634.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-630.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-632.jpg?v=15-03-2025"  class="img-fluid rounded">
+                    </div>                    <div class="swiper-slide">
+                        <img src="https://www.mad4wheels.com/img/slideshow/desktop/slideshow-635.jpg?v=15-03-2025" class="img-fluid rounded">
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="text-center mt-5">
+                <h3>Browse our collection of cars</h3>
+                <p class="lead" style="color: rgb(185, 185, 185);">We offer you the best cars at competitive prices.</p>
+                <button class="btn btn-dark" id="browse-products-btn" style="margin-bottom: 30px;">products</button>
+            </div>
+        </div>
+
+        <div id="products-page" class="container mt-4" style="display: none;">
+            <h2 class="text-center mb-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">products</h2>
+            <div id="products-container" class="row" >
+            </div>
+        </div>
+
+        <div id="about-page" class="container about-section">
+            <div class="row">
+                <div class="col-md-8 mx-auto text-center">
+                    <h2 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">About</h2>
+                    <p class="lead" style="color: rgb(172, 172, 172); ">arabitak is an online store specialized in selling new cars </p>
+                    <div class="mt-4">
+                        <h4 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Our goal</h4>
+                        <p style="color: rgb(172, 172, 172); ">We strive to provide a superior buying experience for our customers by offering a wide range of vehicles at competitive prices and excellent customer service.</p>
+                        
+                        <h4 class="mt-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Website developer</h4>
+                        <p style="color: rgb(172, 172, 172); ">This website was developed as an educational project to showcase web development skills.</p>
+                        
+                        <div class="mt-5">
+                            <h5 style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Site features</h5>
+                            <ul  style="color: rgb(172, 172, 172); ">
+                                <li>Easy and simple user interface</li>
+                                <li>Ability to add and delete products</li>
+                                <li>Responsive design works on all devices</li>
+                                <li>Experience safe and comfortable shopping.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="add-product-page" class="container" style="display: none;">
+            <div class="form-container">
+                <h2 class="text-center mb-4" style="font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Add new product</h2>
+                <form id="add-product-form">
+                    <div class="mb-3">
+                        <label for="product-name" class="form-label"> Product name</label>
+                        <input type="text" class="form-control" id="product-name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="product-price" class="form-label"> price</label>
+                        <input type="number" class="form-control" id="product-price" min="0" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="product-image" class="form-label">Image link</label>
+                        <input type="url" class="form-control" id="product-image" required>
+                    </div>
+                    <div class="d-grid gap-2">
+                        <button type="submit" class="btn btn-dark"> Add product</button>
+                        <button type="button" class="btn btn-secondary" id="cancel-add-btn">Cancel</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <div id="cart-page" class="container mt-4" style="display: none;">
+            <h2 class="text-center mb-4">سلة التسوق</h2>
+            <div id="cart-items" class="mb-4">
+            </div>
+            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
+                <h4 class="cart-total">الإجمالي: <span id="total-price">0</span> ريال</h4>
+                <button class="btn btn-primary" id="checkout-btn">إتمام الشراء</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="script.js"></script>
+
+
+</body>
+</html>
